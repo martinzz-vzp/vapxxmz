@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VAPXXMZ | Catálogo visual · Jiutepec, Morelos</title>
+  <meta name="description" content="VAPXXMZ: marca urbana de Jiutepec, Morelos. Conoce nuestro catálogo visual de accesorios y contáctanos por Facebook.">
+  <meta name="theme-color" content="#08080a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VAPXXMZ">
+  <meta property="og:description" content="Estilo urbano, moderno y atrevido. Catálogo visual de accesorios desde Jiutepec, Morelos.">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Favicon incrustado (no requiere archivo). Puedes reemplazarlo por assets/favicon.png -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308080a'/%3E%3Cpath d='M14 18l18 30 18-30' fill='none' stroke='%239d3dff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="VAPXXMZ, ir al inicio">VAP<span>XX</span>MZ</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menú</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PORTADA ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Jiutepec, Morelos · México</p>
+        <h1 class="hero-title">VAP<span>XX</span>MZ</h1>
+        <!-- Frase de marca: edítala libremente -->
+        <p class="hero-tagline">Estilo urbano. Identidad propia.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/share/1C8TLNaWrW/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg>
+            Facebook<span class="sr-only"> (se abre en una pestaña nueva)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO ============ -->
+    <section class="section" id="catalogo" aria-labelledby="catalogo-titulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Catálogo visual</p>
+          <h2 id="catalogo-titulo">Nuestros accesorios</h2>
+          <p class="section-lead">Explora el catálogo. Para consultar un producto, escríbenos por Facebook.</p>
+        </header>
+
+        <!-- Los botones de categoría se generan solos desde script.js -->
+        <div class="filters reveal" id="filtros" role="group" aria-label="Filtrar por categoría"></div>
+
+        <!-- Las tarjetas se generan solas desde la lista PRODUCTOS de script.js -->
+        <ul class="grid" id="catalogo-grid" aria-live="polite"></ul>
+
+        <p class="empty" id="catalogo-vacio" hidden>No hay productos en esta categoría por ahora.</p>
+
+        <noscript>
+          <p class="empty">Activa JavaScript para ver el catálogo, o visita nuestra página de Facebook.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ IDENTIDAD DE MARCA ============ -->
+    <section class="section section-alt" id="nosotros" aria-labelledby="nosotros-titulo">
+      <div class="container about">
+        <div class="about-text reveal">
+          <p class="eyebrow">Nosotros</p>
+          <h2 id="nosotros-titulo">Hecho con identidad urbana</h2>
+          <p>VAPXXMZ es una marca de Jiutepec, Morelos. Su identidad se construye con negro, blanco y morado eléctrico, en un estilo urbano, elegante y atrevido que se mantiene minimalista.</p>
+          <p>Este sitio es un escaparate: aquí conoces la marca y ves el catálogo. La atención se hace por nuestra página de Facebook.</p>
+        </div>
+
+        <ul class="pillars">
+          <li class="pillar reveal">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V8l6-4v17M10 21V11l10 3v7M3 21h18"/></svg>
+            <h3>Urbano</h3>
+            <p>Inspirado en el ritmo y la estética de la calle.</p>
+          </li>
+          <li class="pillar reveal">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+            <h3>Minimalista</h3>
+            <p>Líneas limpias y paleta reducida, sin excesos.</p>
+          </li>
+          <li class="pillar reveal">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+            <h3>Atrevido</h3>
+            <p>Un acento morado eléctrico que no pasa desapercibido.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ UBICACIÓN ============ -->
+    <section class="section" id="ubicacion" aria-labelledby="ubicacion-titulo">
+      <div class="container">
+        <div class="location reveal">
+          <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div>
+            <p class="eyebrow">Ubicación</p>
+            <h2 id="ubicacion-titulo">Jiutepec, Morelos, México</h2>
+            <p>Esta es nuestra zona de referencia. Para cualquier consulta, la atención se realiza mediante nuestra página de Facebook.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://www.facebook.com/share/1C8TLNaWrW/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg>
+                Escríbenos en Facebook<span class="sr-only"> (se abre en una pestaña nueva)</span>
+              </a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Jiutepec%2C+Morelos%2C+M%C3%A9xico" target="_blank" rel="noopener noreferrer">
+                Ver la zona en el mapa<span class="sr-only"> (se abre en una pestaña nueva)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="#inicio" aria-label="VAPXXMZ, volver al inicio">VAP<span>XX</span>MZ</a>
+        <p>Jiutepec, Morelos, México</p>
+      </div>
+
+      <nav aria-label="Navegación secundaria">
+        <ul class="footer-links">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="https://www.facebook.com/share/1C8TLNaWrW/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (se abre en una pestaña nueva)</span></a></li>
+          <!--
+            AVISO DE PRIVACIDAD: cuando tengas el texto, crea aviso-privacidad.html
+            y descomenta esta línea:
+            <li><a href="aviso-privacidad.html">Aviso de privacidad</a></li>
+          -->
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-legal">
+      <p>© <span id="anio">2026</span> VAPXXMZ. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
